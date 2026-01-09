@@ -1,0 +1,16 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.*
+
+# Raw scraped data (do not publish)
+data/raw/
+
+# Optional: generated reports
+# reports/Report.pdf
