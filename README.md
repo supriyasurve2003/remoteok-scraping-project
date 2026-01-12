@@ -89,30 +89,31 @@ The project simulates an industry-level data pipeline, covering data collection,
 
 remoteok-scraping-project/
 │
-├── 📁 src/                           # Source Code
-│   ├── scraper.py                    # Step 1: Ethical scraping (compliance-focused)
-│   ├── data_cleaner.py               # Step 2: Data cleaning pipeline
-│   └── analyzer.py                   # Step 3: Analysis & visualization
+├── src/                              # Source Code
+│   ├── scraper.py                   # Step 1: Ethical scraping (compliance-focused)
+│   ├── data_cleaner.py              # Step 2: Data cleaning pipeline
+│   └── analyzer.py                  # Step 3: Analysis & visualization
 │
-├── 📁 data/                          # Data Directory
-│   ├── 📁 raw/                       # PHASE 1 OUTPUT
+├── data/                             # Data Directory
+│   ├── raw/                          # PHASE 1 OUTPUT
 │   │   └── remoteok_raw.csv          # ⚠️ NOT uploaded to GitHub (ethical compliance)
 │   │
-│   └── 📁 cleaned/                   # PHASE 2 OUTPUT
+│   └── cleaned/                      # PHASE 2 OUTPUT
 │       └── remoteok_jobs_cleaned.csv # ✅ Processed data for analysis
 │
-├── 📁 visualizations/                # PHASE 3 OUTPUT
-│   ├── top_skills.png               # Top 10 demanded skills
-│   ├── job_type_distribution.png    # Full-time vs contract distribution
-│   ├── top_job_titles.png           # Most frequent job roles
+├── visualizations/                   # PHASE 3 OUTPUT
+│   ├── top_skills.png                # Top 10 demanded skills
+│   ├── job_type_distribution.png     # Full-time vs contract distribution
+│   ├── top_job_titles.png            # Most frequent job roles
 │   └── skill_frequency_comparison.png # Skill demand visualization
 │
-├── 📁 reports/                       # Documentation & Insights
-│   └── analysis_report.pdf          # Comprehensive business intelligence report
+├── reports/                          # Documentation & Insights
+│   └── analysis_report.pdf           # Business intelligence report
 │
 ├── requirements.txt                  # Python dependencies
-├── README.md                         # Project documentation (this file)
-└── .gitignore                       # Excludes raw data & sensitive files
+├── README.md                         # Project documentation
+└── .gitignore                        # Excludes raw data & sensitive files
+
 
 ---
 
@@ -131,7 +132,7 @@ No proprietary or restricted data was accessed or redistributed.
 ---
 
 ## Data Limitations and Biases
-The dataset was scraped from Remote OK and reflects only job postings available on that platform.
+The dataset was scraped from Remote OK and reflects only job postings available on thatplatform. 
 As such, it does not represent the global remote job market. The data is subject to sampling,
 time-based, website-specific, and data-quality biases.
 
