@@ -89,28 +89,30 @@ The project simulates an industry-level data pipeline, covering data collection,
 
 remoteok-scraping-project/
 │
-├── README.md
-├── requirements.txt
+├── 📁 src/                           # Source Code
+│   ├── scraper.py                    # Step 1: Ethical scraping (compliance-focused)
+│   ├── data_cleaner.py               # Step 2: Data cleaning pipeline
+│   └── analyzer.py                   # Step 3: Analysis & visualization
 │
-├── src/
-│   ├── scraper.py
-│   ├── data_cleaner.py
-│   └── analyzer.py
+├── 📁 data/                          # Data Directory
+│   ├── 📁 raw/                       # PHASE 1 OUTPUT
+│   │   └── remoteok_raw.csv          # ⚠️ NOT uploaded to GitHub (ethical compliance)
+│   │
+│   └── 📁 cleaned/                   # PHASE 2 OUTPUT
+│       └── remoteok_jobs_cleaned.csv # ✅ Processed data for analysis
 │
-├── data/
-│   |── cleaned/
-│   |    └── remoteok_jobs_cleaned.csv
-|   |── raw/
-|   |   └── remoteok_raw.csv
+├── 📁 visualizations/                # PHASE 3 OUTPUT
+│   ├── top_skills.png               # Top 10 demanded skills
+│   ├── job_type_distribution.png    # Full-time vs contract distribution
+│   ├── top_job_titles.png           # Most frequent job roles
+│   └── skill_frequency_comparison.png # Skill demand visualization
 │
-├── visualizations/
-│   ├── top_skills.png
-│   ├── job_type_distribution.png
-│   ├── top_job_titles.png
-│   └── skill_frequency_comparison.png
+├── 📁 reports/                       # Documentation & Insights
+│   └── analysis_report.pdf          # Comprehensive business intelligence report
 │
-└── reports/
-    └── analysis_report.pdf
+├── requirements.txt                  # Python dependencies
+├── README.md                         # Project documentation (this file)
+└── .gitignore                       # Excludes raw data & sensitive files
 
 ---
 
