@@ -88,31 +88,30 @@ The project simulates an industry-level data pipeline, covering data collection,
 ## Project Structure
 
 remoteok-scraping-project/
+├── src/                       ← Source code
+│   ├── scraper.py             ← Ethical web scraping logic
+│   ├── data_cleaner.py        ← Data cleaning & preprocessing
+│   └── analyzer.py            ← Data analysis & visualization
 │
-├── src/                              # Source Code
-│   ├── scraper.py                   # Step 1: Ethical scraping (compliance-focused)
-│   ├── data_cleaner.py              # Step 2: Data cleaning pipeline
-│   └── analyzer.py                  # Step 3: Analysis & visualization
+├── data/                      ← Dataset storage
+│   ├── raw/                   ← Raw scraped data (not uploaded)
+│   │   └── remoteok_raw.csv   ← Ethical compliance file
+│   └── cleaned/               ← Cleaned dataset
+│       └── remoteok_jobs_cleaned.csv
 │
-├── data/                             # Data Directory
-│   ├── raw/                          # PHASE 1 OUTPUT
-│   │   └── remoteok_raw.csv          # ⚠️ NOT uploaded to GitHub (ethical compliance)
-│   │
-│   └── cleaned/                      # PHASE 2 OUTPUT
-│       └── remoteok_jobs_cleaned.csv # ✅ Processed data for analysis
+├── visualizations/            ← Generated plots & charts
+│   ├── top_skills.png         ← Top demanded skills
+│   ├── job_type_distribution.png ← Job type distribution
+│   ├── top_job_titles.png     ← Most frequent job roles
+│   └── skill_frequency_comparison.png ← Skill comparison
 │
-├── visualizations/                   # PHASE 3 OUTPUT
-│   ├── top_skills.png                # Top 10 demanded skills
-│   ├── job_type_distribution.png     # Full-time vs contract distribution
-│   ├── top_job_titles.png            # Most frequent job roles
-│   └── skill_frequency_comparison.png # Skill demand visualization
+├── reports/                   ← Project reports
+│   └── analysis_report.pdf    ← Final analysis report
 │
-├── reports/                          # Documentation & Insights
-│   └── analysis_report.pdf           # Business intelligence report
-│
-├── requirements.txt                  # Python dependencies
-├── README.md                         # Project documentation
-└── .gitignore                        # Excludes raw data & sensitive files
+├── requirements.txt           ← Python dependencies
+├── README.md                  ← Project documentation
+└── .gitignore                 ← Excluded files & folders
+
 
 
 ---
