@@ -85,37 +85,6 @@ The project simulates an industry-level data pipeline, covering data collection,
 
 ---
 
-## Project Structure
-
-remoteok-scraping-project/
-├── src/                       ← Source code
-│   ├── scraper.py             ← Ethical web scraping logic
-│   ├── data_cleaner.py        ← Data cleaning & preprocessing
-│   └── analyzer.py            ← Data analysis & visualization
-│
-├── data/                      ← Dataset storage
-│   ├── raw/                   ← Raw scraped data (not uploaded)
-│   │   └── remoteok_raw.csv   ← Ethical compliance file
-│   └── cleaned/               ← Cleaned dataset
-│       └── remoteok_jobs_cleaned.csv
-│
-├── visualizations/            ← Generated plots & charts
-│   ├── top_skills.png         ← Top demanded skills
-│   ├── job_type_distribution.png ← Job type distribution
-│   ├── top_job_titles.png     ← Most frequent job roles
-│   └── skill_frequency_comparison.png ← Skill comparison
-│
-├── reports/                   ← Project reports
-│   └── analysis_report.pdf    ← Final analysis report
-│
-├── requirements.txt           ← Python dependencies
-├── README.md                  ← Project documentation
-└── .gitignore                 ← Excluded files & folders
-
-
-
----
-
 ## Team Contribution
 - *Web Scraping:* Scraping Team  
 - *Data Cleaning:* Data Cleaning Team  
@@ -139,3 +108,36 @@ time-based, website-specific, and data-quality biases.
 
 *Evoastra Ventures (OPC) Pvt Ltd*  
 Data Science Internship – Mini Project
+
+---
+
+
+## 📁 Project Structure
+
+```text
+remoteok-scraping-project/
+│
+├── README.md                  # Project overview & documentation
+├── requirements.txt           # Python dependencies
+├── .gitignore                 # Excludes raw data & unnecessary files
+├── Team_B.ipynb               # Jupyter Notebook (scraping, cleaning, analysis & visuals)
+│
+├── src/                       # Source code
+│   ├── scraper.py             # Ethical web scraping logic
+│   ├── data_cleaner.py        # Data cleaning pipeline
+│   └── analyzer.py            # Data analysis & visualization
+│
+├── data/
+│   └── cleaned/
+│       └── remoteok_jobs_cleaned.csv   # Final cleaned dataset
+│
+├── visualizations/
+│   ├── top_skills.png
+│   ├── job_type_distribution.png
+│   ├── top_job_titles.png
+│   └── skill_frequency_comparison.png
+│
+└── reports/
+    ├── analysis_report.pdf    # Final project report
+    └── methodology.md         # Technical methodology
+
