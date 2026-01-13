@@ -1,4 +1,4 @@
- n# Remote Job Market Intelligence using Ethical Web Scraping
+# Remote Job Market Intelligence using Ethical Web Scraping
 
 ## Internship Mini Project  
 *Organization:* Evoastra Ventures (OPC) Pvt Ltd  
