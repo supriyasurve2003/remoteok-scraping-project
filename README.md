@@ -1,4 +1,4 @@
-# Remote Job Market Intelligence using Ethical Web Scraping
+ n# Remote Job Market Intelligence using Ethical Web Scraping
 
 ## Internship Mini Project  
 *Organization:* Evoastra Ventures (OPC) Pvt Ltd  
@@ -139,5 +139,3 @@ remoteok-scraping-project/
 │
 └── reports/
     ├── analysis_report.pdf    # Final project report
-    └── methodology.md         # Technical methodology
-
